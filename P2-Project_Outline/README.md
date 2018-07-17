@@ -7,11 +7,34 @@ For this assignment, you will submit a high-level outline of your project. This 
 ## Submission Instructions
 
 ### Overview
-Include overview here
+One of my hobbies is medieval reenactment. Within that, I have undertaken a large project to recreate the state of knowledge of astronomy in the late 16th century by reproducing instruments and techniques used by Tycho Brahe, Johannes Kepler, and others. In particular, Brahe used decades of observations to create the first star charts since antiquity with the posthumus publication of the Uranometria.
+
+As creation of a similar star chart is part of my project’s goals, I will need to take in data and for each object. Since this data is taken in a coordinate system that is fixed to the sky and not the celestial sphere, the data will first need to be converted to a static coordinate system (Right Ascension-Declination), and for each object have averages calculated as well as parameters exploring systematic and observational error calculated. These values will be validated and compared against the astronomical database Set of Identifications, Measurements, and Bibliography for Astronomical Data (SIMBAD).
+
 ### Features
-Include Features here
+1. Add star - adds a new star to the catalog
+    a. Error checking - Validates data before submission by ensuring object is findable in SIMBAD
+2. Add observation - add an observation to an individual star
+    a. Error checking - Double checks data by ensuring values being entered are with a reasonable margin from the true value
+3. Coordinate system conversion - Freely converts observations from Alt-Az to RA-Dec
+4. Unit conversion - Flexibly display observations in both decimal and HMS units
+5. Search - Finds an individual star and displays all observations
+6. Positional average - Takes all observations for an individual star and calculates the average
+7. Statistics - Calculates various important figures
+    a. Standard deviation - Calculates a standard deviation for each object
+    b. Position vs “true” error - Uses modern value of position for each star (from SIMBAD) to compare average and modern value and determine error
+    c. Instrumental error - Searches all observations and compares to true positions (from SIMBAD) to search for large trend error indicative of instrumental error
+8. Observational scheduling tool - From a list of entered stars, produces a list of objects that will be easily visible that night from a given location between ~9pm and 3am for follow up observations. (Stretch goal due to complex math)
+
+
 ### Technologies
-Include Technologies here
+Java
+Gradle
+MySQL
+Spring
+Hibernate
+HTML
+CSS
 
 ### What I'll Have to Learn
-Include what you will need to learn here
+Various aspects of this project require validating and comparing data with values given from SIMBAD. Thus, I will need to become familiar with a scraping tool such as jsoup to perform these functions.
