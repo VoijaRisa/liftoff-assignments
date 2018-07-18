@@ -12,18 +12,18 @@ One of my hobbies is medieval reenactment. Within that, I have undertaken a larg
 As creation of a similar star chart is part of my project’s goals, I will need to take in data and for each object. Since this data is taken in a coordinate system that is fixed to the sky and not the celestial sphere, the data will first need to be converted to a static coordinate system (Right Ascension-Declination), and for each object have averages calculated as well as parameters exploring systematic and observational error calculated. These values will be validated and compared against the astronomical database Set of Identifications, Measurements, and Bibliography for Astronomical Data (SIMBAD).
 
 ### Features
-1. Add star - adds a new star to the catalog
-    a. Error checking - Validates data before submission by ensuring object is findable in SIMBAD
-2. Add observation - add an observation to an individual star
-    a. Error checking - Double checks data by ensuring values being entered are with a reasonable margin from the true value
+1. Add star - Adds a new star to the catalog
+2. Add observation - Add an observation to an individual star
 3. Coordinate system conversion - Freely converts observations from Alt-Az to RA-Dec
 4. Unit conversion - Flexibly display observations in both decimal and HMS units
 5. Search - Finds an individual star and displays all observations
-6. Positional average - Takes all observations for an individual star and calculates the average
-7. Statistics - Calculates various important figures
-    a. Standard deviation - Calculates a standard deviation for each object
-    b. Position vs “true” error - Uses modern value of position for each star (from SIMBAD) to compare average and modern value and determine error
-    c. Instrumental error - Searches all observations and compares to true positions (from SIMBAD) to search for large trend error indicative of instrumental error
+6. Statistics - Calculates various important figures
+    a. Positional average - Takes all observations for an individual star and calculates the average
+    b. Standard deviation - Calculates a standard deviation for each object
+    c. Position vs “true” error - Uses modern value of position for each star to compare average and modern value and determine error
+    d. Instrumental error - Searches all observations and compares to true positions (from SIMBAD) to search for large trend error indicative of instrumental error
+8. Star Map - Displays a 2D map of the celestial sphere with the position for each star displayed
+    a. Error bars - Displays statistical uncertainty as error bars
 8. Observational scheduling tool - From a list of entered stars, produces a list of objects that will be easily visible that night from a given location between ~9pm and 3am for follow up observations. (Stretch goal due to complex math)
 
 
@@ -37,4 +37,4 @@ HTML
 CSS
 
 ### What I'll Have to Learn
-Various aspects of this project require validating and comparing data with values given from SIMBAD. Thus, I will need to become familiar with a scraping tool such as jsoup to perform these functions.
+Javascript graphing tools.
