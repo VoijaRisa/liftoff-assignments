@@ -21,7 +21,7 @@ As creation of a similar star chart is part of my project’s goals, I will need
     a. Positional average - Takes all observations for an individual star and calculates the average
     b. Standard deviation - Calculates a standard deviation for each object
     c. Position vs “true” error - Uses modern value of position for each star to compare average and modern value and determine error
-    d. Instrumental error - Searches all observations and compares to true positions (from SIMBAD) to search for large trend error indicative of instrumental error
+    d. Instrumental error - Searches all observations and compares to true positions to search for large trend error indicative of instrumental error
 8. Star Map - Displays a 2D map of the celestial sphere with the position for each star displayed
     a. Error bars - Displays statistical uncertainty as error bars
 8. Observational scheduling tool - From a list of entered stars, produces a list of objects that will be easily visible that night from a given location between ~9pm and 3am for follow up observations. (Stretch goal due to complex math)
